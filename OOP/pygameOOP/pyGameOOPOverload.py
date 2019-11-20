@@ -62,8 +62,8 @@ def handle_collisions(blob_list):
     return blues, reds, greens
 
 def draw_environment(blob_list):
-    game_display.fill(WHITE)
     blues, reds, greens = handle_collisions(blob_list)
+    game_display.fill(WHITE)
     for blob_dict in blob_list:
         for blob_id in blob_dict:
             blob = blob_dict[blob_id]
